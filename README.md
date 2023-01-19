@@ -1,2 +1,2 @@
-# trybe_exercicios
-meus exercícios.
+<!DOCTYPE html>
+<html lang="pt-br> 
