@@ -72,8 +72,10 @@ switch (chessPiece) {
     break;
 };
 
- let porcentagem = 63;  
-if(porcentagem >= 90){
+ let porcentagem = -19;  
+ if(porcentagem > 100 || porcentagem < 0) {
+    console.log('erro nota imvalida')
+} else if(porcentagem >= 90){
     console.log('A')
 } else if(porcentagem >= 80) {
     console.log('B')
@@ -83,10 +85,24 @@ if(porcentagem >= 90){
     console.log('D')
 } else if(porcentagem >= 50) {
     console.log('E')
-} else if(porcentagem < 50) {
+} else {
     console.log('F')
-} else if(porcentagem > 100 || porcentagem < 0) {
-    console.log('erro nota imvalida')
-}
+} 
+
+let a = 2;
+let b = 4;
+let c = 12;
+let verifique = false; 
+ if((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
+   verifique = true;
+};
+console.log(verifique); 
+
   
+
+let verifiqueImpar = false; 
+ if((a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0)) {
+   verifiqueImpar = true;
+};
+console.log(verifiqueImpar); 
 
