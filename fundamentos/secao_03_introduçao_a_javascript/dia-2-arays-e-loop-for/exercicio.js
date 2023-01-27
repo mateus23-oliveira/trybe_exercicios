@@ -20,5 +20,19 @@ let mediaAritmetica = 0;
    } else {
     console.log('valor menor ou igual a 20')
    }
- 
-   
+ let maiorNumero = [0]
+for(index = 0; index < numbers.length; index += 1) {
+  if(numbers[index] > maiorNumero) {
+    maiorNumero = numbers[index];
+  }
+}
+   console.log(maiorNumero);
+
+   impar = 0;
+   for(index = 0; index < numbers.length; index += 1)
+       impar += numbers[index] % 2 !== 0;
+   if(impar > 0) {
+    console.log(impar);
+   } else {
+    console.log('nenhum valor impar');
+   }
