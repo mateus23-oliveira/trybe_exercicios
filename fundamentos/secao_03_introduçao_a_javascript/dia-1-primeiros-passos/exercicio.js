@@ -106,3 +106,5 @@ let verifiqueImpar = false;
 };
 console.log(verifiqueImpar); 
 
+
+
