@@ -17,7 +17,7 @@ for(index = 0; index < word.length; index += 1) {
     reverso = word.split('').reverse().join('');
     console.log(reverso);
 
-       // imprimindo maior palavra.
+       // imprimindo maior palavra e menor palavra.
 
        let array = ['java', 'javascript', 'python', 'html', 'css'];
 
@@ -36,3 +36,21 @@ for (let ind = 0; ind < array.length; ind += 1) {
 }
 console.log(maiorPalavra);
 console.log(palavraMenor);
+ 
+// numeros primos entre 2 e 50
+
+let biggestPrimeNumber = 0;
+
+for (let currentNumber = 2; currentNumber <= 50; currentNumber += 1) {
+  let isPrime = true;
+  for (let currentDivisor = 2; currentDivisor < currentNumber; currentDivisor += 1) {
+    if (currentNumber % currentDivisor === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    biggestPrimeNumber = currentNumber;
+  }
+}
+
+console.log(biggestPrimeNumber);
